@@ -1,14 +1,4 @@
-import "bootstrap";
-import "./style.css";
-
-
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
-
-//window.onload = function() {
-  //write your code here
-
-  const articulos = ["el", "la", "mi", "tu", "su", "nuestro", "este", "esa"];
+const articulos = ["el", "la", "mi", "tu", "su", "nuestro", "este", "esa"];
 const nombres = ["gato", "perro", "codigo", "mundo", "robot", "viaje", "cloud", "byte"]
 const adjetivos = ["rapido", "inteligente", "feliz", "moderno", "digital", "loco", "seguro", "verde"]
 const extensiones = [".com", ".es", ".org", ".net", ".dev"]
@@ -29,7 +19,5 @@ function generarDominio() {
 document.getElementById("resultado").textContent = dominio;
 
 }
-
-
 
 
