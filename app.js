@@ -14,10 +14,14 @@ function generarDominio() {
     const adjetivo = aleatorio(adjetivos);
     const extension = aleatorio(extensiones);
     
-    const dominio = '${articulo}${nombre}${adjetivo}${extension}';
+    const dominio = articulo+nombre+adjetivo+extension;
+    const parrafo = document.createElement("p");
+
+    parrafo.innerHTML = dominio
+    
 
 document.getElementById("resultado").textContent = dominio;
 
 }
 
-
+console.log()
