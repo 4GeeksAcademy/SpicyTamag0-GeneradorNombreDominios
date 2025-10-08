@@ -5,7 +5,7 @@ const extensiones = [".com", ".es", ".org", ".net", ".dev"];
 
 document.getElementById("botonGenerar").addEventListener("click", generarDominios);
 
-function aleatorio(lista) {
+function obtenerElementoAleatorio(lista) { /*Soy Looperrrrrr, te he mejorado aquí la legibilidad cambiando el nombre de la funcion "aleatorio" a "obtenerElementoAleatorio" considero que así se entiende mucho mejor la función, por el resto veo que está todo bastante correcto.*/
   return lista[Math.floor(Math.random() * lista.length)];
 }
 
@@ -16,10 +16,10 @@ function generarDominios() {
   const generados = new Set();
 
   while (generados.size < 5) {
-    const articulo = aleatorio(articulos);
-    const nombre = aleatorio(nombres);
-    const adjetivo = aleatorio(adjetivos);
-    const extension = aleatorio(extensiones);
+    const articulo = obtenerElementoAleatorio(articulos); /*Soy Looperrrrrr, te he mejorado aquí la legibilidad cambiando el nombre de la funcion "aleatorio" a "obtenerElementoAleatorio" considero que así se entiende mucho mejor la función, por el resto veo que está todo bastante correcto.*/
+    const nombre = obtenerElementoAleatorio(nombres);
+    const adjetivo = obtenerElementoAleatorio(adjetivos);
+    const extension = obtenerElementoAleatorio(extensiones);
 
     generados.add(articulo + nombre + adjetivo + extension);
   }
@@ -31,3 +31,5 @@ function generarDominios() {
     resultado.appendChild(div);
   });
 }
+
+
